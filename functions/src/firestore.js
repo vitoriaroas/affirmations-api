@@ -4,7 +4,7 @@ const serviceAccount = require('../credentials.json')
 
 
 exports.connectFirestore = () => {
-	if (admin.app.length === 0) {
+	if (admin.apps.length === 0) {
 		admin.initializeApp({
 			credential: admin.credential.cert(serviceAccount),
 		})
